@@ -1,0 +1,385 @@
+@font-face {
+    font-family: changa;
+    src: url('bootstrap/fonts/Changa.ttf');
+}
+
+
+*   {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-origin: border-box;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background: #ffffff;
+    color: #777;
+    font-family: changa;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6  {
+    letter-spacing: 3px;
+    color: #000000;
+}
+
+h1  {font-size: 35px;}
+h2  {font-size: 30px;}
+h3  {font-size: 25px;}
+h4  {font-size: 20px;}
+h5  {font-size: 18px;}
+h6  {font-size: 12px;}
+
+p   {
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.content {
+    padding: 80px 0;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.text-shadow    {
+    text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+}
+
+.box-shadow  {
+    border: 1px solid #000000;
+    padding: 2px;
+    box-shadow: 5px 10px #000000;
+}
+
+hr.style {
+    border-top: 3px double #8c8b8b;
+}
+
+/*  NAVBAR    */
+.navbar {
+    background-color: #2d2d30;
+    font-size: 15px !important;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #000000 !important;
+    background: #ffffff;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: red !important;
+}
+
+
+/*  LOGO    */
+
+.loading {
+    text-transform:uppercase;
+    width:150px;
+    text-align:center;
+    line-height:50px;
+    position:absolute;
+    margin:auto;
+    transform:translateY(-50%);
+}
+
+.loading span {
+    position:relative;
+    z-index:999;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.loading:before {
+    content:'';
+    background: #bd2130;
+    width:128px;
+    height:36px;
+    display:block;
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+
+    animation:2s loadingBefore infinite ease-in-out;
+}
+
+@keyframes loadingBefore {
+    0%   {transform:translateX(-14px);}
+    50%  {transform:translateX(14px);}
+    100% {transform:translateX(-14px);}
+}
+
+
+.loading:after {
+    content:'';
+    background: #000000;
+    width:14px;
+    height: 50px;
+    display:block;
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+    margin:auto;
+    opacity:.5;
+    animation:2s loadingAfter infinite ease-in-out;
+}
+
+@keyframes loadingAfter {
+    0%   {transform:translateX(-50px);}
+    50%  {transform:translateX(50px);}
+    100% {transform:translateX(-50px);}
+}
+
+/*  INTRODUCTION  MY PAGE    */
+.word-move {
+    overflow: hidden;
+    position: relative;
+    height: 65px;
+    padding: 10px 0 0 161px;
+    margin-top: -30px;
+}
+.word-move li {
+    color: #ffffff;
+    font-weight: 700;
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+}
+
+.flip2 {
+    -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip3 {
+    -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+.flip4 {
+    -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+    animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+}
+
+@-webkit-keyframes flip2 {
+    0% {
+        margin-top: -180px;
+    }
+    5% {
+        margin-top: -90px;
+    }
+    50% {
+        margin-top: -90px;
+    }
+    55% {
+        margin-top: 0;
+    }
+    99.99% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+
+@keyframes flip2 {
+    0% {
+        margin-top: -180px;
+    }
+    5% {
+        margin-top: -90px;
+    }
+    50% {
+        margin-top: -90px;
+    }
+    55% {
+        margin-top: 0;
+    }
+    99.99% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+@-webkit-keyframes flip3 {
+    0% {
+        margin-top: -270px;
+    }
+    5% {
+        margin-top: -180px;
+    }
+    33% {
+        margin-top: -180px;
+    }
+    38% {
+        margin-top: -90px;
+    }
+    66% {
+        margin-top: -90px;
+    }
+    71% {
+        margin-top: 0;
+    }
+    99.99% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+@keyframes flip3 {
+    0% {
+        margin-top: -270px;
+    }
+    5% {
+        margin-top: -180px;
+    }
+    33% {
+        margin-top: -180px;
+    }
+    38% {
+        margin-top: -90px;
+    }
+    66% {
+        margin-top: -90px;
+    }
+    71% {
+        margin-top: 0;
+    }
+    99.99% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+@-webkit-keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+    5% {
+        margin-top: -270px;
+    }
+    25% {
+        margin-top: -270px;
+    }
+    30% {
+        margin-top: -180px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    55% {
+        margin-top: -90px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    80% {
+        margin-top: 0;
+    }
+    99.99% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+@keyframes flip4 {
+    0% {
+        margin-top: -360px;
+    }
+    5% {
+        margin-top: -270px;
+    }
+    25% {
+        margin-top: -270px;
+    }
+    30% {
+        margin-top: -180px;
+    }
+    50% {
+        margin-top: -180px;
+    }
+    55% {
+        margin-top: -90px;
+    }
+    75% {
+        margin-top: -90px;
+    }
+    80% {
+        margin-top: 0;
+    }
+    99.99% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: -270px;
+    }
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 350px;
+}
+
+/*  MY SKILL    */
+#bars {
+    margin: 2em auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bar {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.bar h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.bar-circle {
+    display: block;
+    margin: 2.7em auto;
+}
